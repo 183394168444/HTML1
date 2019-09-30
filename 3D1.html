@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+    .div1 {
+        margin: 0 auto;
+        width: 1200px;
+        height: 600px;
+        border: 1px solid #f00;
+        border-radius: 15px;
+    }
+
+    .div11 {
+        padding-top: 10px;
+        padding: 30px
+
+
+    }
+
+    .div11 img {
+        padding-left: 30%;
+    }
+
+    .div2 {
+        float: left;
+
+    }
+
+    .div2 img {
+        float: left;
+        left: px;
+    }
+
+    .div21 {
+        float: left;
+        width: 200px;
+    }
+
+    .div21 span {
+        float: left;
+        padding: 10px;
+        padding-left: 30%;
+
+
+    }
+
+    li {
+        width: 350px;
+
+        line-height: 35px;
+        line-width: 30px;
+    }
+
+    .li1 {
+        width: 350px;
+        float: right;
+        line-height: 35px;
+        line-width: 30px;
+    }
+
+    .div2 p1 {
+        position: fixed;
+        top: 100px;
+        right: 950px;
+    }
+</style>
+<body>
+<div class="div1">
+    <div class="div11"><font color="#FF0000" size="5px">SHOP</font>&nbsp &nbsp<font color="#000" size="5px">今日推荐</font>
+
+    </div>
+
+
+    <div class="div2">
+        <ul>
+            <c:forEach items="${users}" var="user">
+                <li class="li1"><img src="img/${user.img}" width="130px" height="130px">
+                    <div class="div21"><span><br/></span><span class="a1">价格：${user.price}
+<br/>储存：${user.space}</span></div>
+                </li>
+            </c:forEach>
+        </ul>
+    </div>
+
+
+</div>
+</body>
+</html>

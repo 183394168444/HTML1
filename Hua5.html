@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .b_1 {
+            width: 285px;
+            height: 228px;
+        / / border: 1 px solid red;
+            margin: 50px auto;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+
+            display: inline-block;
+            width: 95px;
+            height: 76px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid red;
+            box-sizing: border-box;
+            font-size: 13px;
+            margin-top: -1px;
+            margin-left: -1px;
+            float: left;
+        }
+
+        li span {
+            height: 25px;
+            width: 26px;
+            margin: 8px auto;
+            background: url('img/111.png');
+            display: block;
+
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="b_1">
+    <ul>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+        <li><span></span>
+            <p>充话费</p></li>
+    </ul>
+
+</div>
+
+<script>
+
+    var spans = document.querySelectorAll('span');
+    for (var i = 0; i < spans.length; i++) {
+        spans[i].style.backgroundPositionY = -44 * i + 'px';
+    }
+
+
+</script>
+</body>
+</html>

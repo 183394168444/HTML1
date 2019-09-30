@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*
+        ul {
+            list-style: none;
+        }
+    */
+    .div1_0 {
+
+        width: 1000px;
+        height: 550px;
+        border: 1px solid #5dc734;
+        margin: 0 auto;
+
+    }
+
+    .div1_0 p {
+        position: fixed;
+        top: 323px;
+        right: 1113px;
+    }
+
+    .div1_0 p1 {
+        position: fixed;
+        top: 323px;
+        right: 400px;
+    }
+
+    img {
+        width: 1000px;
+        height: 550px;
+    }
+
+    .p1 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bx {
+        float: left;
+        transform: rotate(90deg);
+        color: #f9f9f9;
+        position: fixed;
+        top: 480px;
+
+        left: 1000px;
+    }
+
+    .bx img {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 28px;
+        right: -4px;
+        animation: boom 3s alternate infinite;
+    }
+
+    @keyframes boom {
+        0% {
+            top: 28px;
+        }
+        20% {
+            top: 50px;
+        }
+        40% {
+            top: 31px;
+        }
+        60% {
+            top: 12px;
+        }
+        80% {
+            top: 6px;
+        }
+        100% {
+            top: -15px;
+        }
+    }
+
+</style>
+<body>
+<div class="div1_0">
+    <img src="img/img_main_1.jpg">
+    <p class="p1"><img src="img/hover_left.png"></p>
+    <p1 class="p1"><img src="img/hover_right.png"></p1>
+    <div class="bx">
+        <li></li>
+        <li></li>
+        <img src="img/QQ图片20190413172604.jpg">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+</div>
+</body>
+</html>
